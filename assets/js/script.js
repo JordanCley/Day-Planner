@@ -1,14 +1,14 @@
-var hour = "",
-    todayDate = null,
-    todayTime = null,
+var hour        = "",
+    todayDate   = null,
+    todayTime   = null,
     eventsArray = [],
-    timeArray = [];
+    timeArray   = [];
 
 // GETTING CURRENT DATE AND TIME AND DISPLAYING IT IN JUMBOTRON
 function todaysDateTime() {
   todayDate = moment().format("MMMM Do, YYYY");
   todayTime = moment().format("h:mm:ss a");
-  hour = 12; //moment().format("HH");
+  hour = moment().format("HH");
   for (var i = 9; i <= 17; i++) {
     var textTimeId = $("." + i);
     if (hour > i) {
