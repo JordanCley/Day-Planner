@@ -9,9 +9,10 @@ function todaysDateTime() {
   todayDate = moment().format("MMMM Do, YYYY");
   todayTime = moment().format("h:mm:ss a");
   hour = moment().format("HH");
+  console.log(hour);
   for (var i = 9; i <= 17; i++) {
     var textTimeId = $("." + i);
-    if (hour > i) {
+    if (hour > i || hour == 00) {
       textTimeId.addClass("past");
       textTimeId.prop("disabled", true);
     } else if (hour === i) {
