@@ -1,36 +1,65 @@
-textarea {
-    height: 100%;
-    width: 100%;
-    padding: 0 0 0 0;
-    margin: 0 0 0 0;
-    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-    box-sizing: border-box;         /* Opera/IE 8+ */
+body {
+  margin: 50px 50px 50px 50px;
+  background-color: rgb(172, 172, 199);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
-.container  {
-    /* border: 1px solid black; */
-    padding: 1rem 0 1rem 0;
-    margin-top: 0;
+textarea {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.2em;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  padding: 10px 10px 10px 10px;
+  margin: 0 0 0 0;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+  resize: none;
 }
+
+textarea:focus {
+  border-color: red;
+  outline: 0;
+}
+
+.past {
+  background-color: grey;
+}
+
+.now {
+  background-color: red;
+}
+
+.future {
+  background-color: orange;
+}
+
+.container {
+  max-width: 50rem;
+  padding: 1rem 0 1rem 0;
+  margin: 0 auto;
+}
+
 .col-10 {
-    padding: 0 0 0 0;
-    margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
 }
 
 .col-1 {
-    border: 1px solid black;
-    margin: 0 0 0 0;
-    padding: 1.5rem 0 0 0;
-    text-align: center;
-
+  border: 1px solid black;
+  font-size: 1em;
+  margin: 0 0 0 0;
+  padding: 1.5rem 0 0 0;
+  text-align: center;
 }
 
 .fa {
-    line-height: 5rem;
+  line-height: 5rem;
 }
 
 .jumbotron {
-    text-align: center;
-    margin-bottom: 0;
+  font-size: 1.2em;
+  text-align: center;
+  margin: 0 20px 0 20px;
 }
